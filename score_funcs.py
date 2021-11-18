@@ -11,7 +11,7 @@ def distance(p1, p2):
 
 
 def score_contacts(pdbfile, reslist1, reslist2):
-    chains, residues = get_coordinates_pdb(pdbfile)
+    chains, residues, resindices = get_coordinates_pdb(pdbfile)
     score = 0
     pairs = []
     for res1 in reslist1:
@@ -19,7 +19,7 @@ def score_contacts(pdbfile, reslist1, reslist2):
             contact = 0
             for atom1 in residues[res1]:
                 for atom2 in residues[res2]:
-                    if distance(atom1[2], atom2[2])<=8:
+                    if distance(atom1[2], atom2[2])<=4:
                         contact=1
                         pair = (res1, res2)
                         if pair not in pairs:
@@ -33,18 +33,14 @@ def score_confidence(resultsfile, reslist1, reslist2, resindices):
 
     with open(resultsfile,'rb') as f:
         p = pickle.load(f)
-        pae = p['pae_output']
+        pae = p['pae_output'][0]
         score = 0
-        for res1 in reslist1:
+        for res1,res2 in zip(reslist1,reslist2):
             res1_id = resindices[res1]
-            for res2 in reslist2:
-                res2_id = resindices[res2]
-                score = score + pae[res1_id][res2_id]
+            res2_id = resindices[res2]
+            #print(score)
+            score = score + pae[res1_id][res2_id]
     return score
-
-
-        print(len(pae))
-        print(pae[1])
 
 
 if __name__ == "__main__":
