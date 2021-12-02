@@ -1,3 +1,10 @@
+def write_seq_csv_pd1(fname, helices, pd1_seqs):
+    with open(fname, "w") as f:
+        for helix in helices:
+            for pd1_seq in pd1_seqs:
+                f.write(","+pd1_seq+","+helix+"\n")
+
+
 pd1_seqs = []
 helix_seqs = []
 
