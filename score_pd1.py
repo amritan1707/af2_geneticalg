@@ -1,5 +1,20 @@
 from score_funcs import score_contacts, score_confidence_pairs, score_confidence_lists
 from pdb_parser import get_coordinates_pdb
+import os
+import subprocess
+import shutil
+
+def run_af2_pd1(pool, pd1seq, directory, fpath, flagsfile, af2path):
+    """runs af2 on inputted list of Sequences and writes outputs to files"""
+    os.makedirs(directory+"/inputs")
+    path = directory+"/inputs/"
+    with open(path+"sequences.csv", "w") as opf:
+        for p in pool:
+            opf.write(","+str(pd1seq)+","+str(p)+"\n")
+
+    shutil.copy(fpath+flagsfile, directory)
+    return subprocess.run(["python", af2path+"run_af2.py", "@"+flagsfile])
+    
 
 def score_pd1(pdbfile, resultsfile, pocketresidues):
     residuelist = []
@@ -11,7 +26,6 @@ def score_pd1(pdbfile, resultsfile, pocketresidues):
     respairs2 = [x[1] for x in contacts]
     confidencescore = score_confidence_lists(resultsfile, reslist1, reslist2, resindices)
     return contacts, contactscore, confidencescore
-
 
 if __name__ == "__main__":
     path = "/home/amrita/pd1/run1/outputs/"
