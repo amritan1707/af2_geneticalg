@@ -1,6 +1,10 @@
 import random
 from Sequence import Sequence
 from score_pd1 import score_pd1, run_af2_pd1
+import glob
+import os
+import subprocess
+import natsort
 
 def create_new_seqs(startseqs, num_seqs, crossoverpercent = 0.2):
     """takes starting sequences and creates a pool of size num_seqs by mutation and crossover"""
@@ -21,33 +25,59 @@ def create_new_seqs(startseqs, num_seqs, crossoverpercent = 0.2):
 
     return pool
 
-def run_genetic_alg_pd1(path, pd1seq, startingseqs, poolsize = 50, num_iter = 20):
-    pool = create_new_seqs(startingseqs, poolsize)
-    scored_pool = {}
+def run_genetic_alg_pd1(pa, pd1seq, startingseqs, pocketresidues, poolsize = 50, num_iter = 20):
+    scored_seqs = {}
     curr_iter = 1
     while curr_iter <= num_iter:
+        path = pa + "run"+str(curr_iter)+"/"
+        
+        pool = create_new_seqs(startingseqs, poolsize)
 
+
+        scoring_pool = [p for p in pool if p not in scored_seqs.keys()]
         #uncomment when running
-        #run_af2_pd1(pool, pd1seq, path) 
+        #def run_af2_pd1(pool, pd1seq, directory, fpath, flagsfile, af2path):
+        run_af2_pd1(scoring_pool, pd1seq, path, "/home/amrita/pd1/", "flags_froome.txt", "/home/nzrandol/alphafold/run/") 
 
         oppath = path+"outputs/"
 
-        #iterate through outputs and read
-        #add score for each sequence (not already in scored_pool) into scored_pool
-        #contacts, contactscores, confscores = score_pd1(oppath)
-        #sort by score
-        #get rid of lower scoring half
+        files = os.listdir(oppath)
+        for f in files:
+            if f.endswith("pbz2"):
+                subprocess.run(["bunzip2", f])
+        files = natsort.natsorted(os.listdir(oppath))
 
+        for f in files:
+            if f.endswith("out"):
+                seqnum = f.split("_")[1]
+                pdbf = f.partition('results')[0]+"unrelaxed.pdb"
+                print(f, pdbf)
+                contacts, contactscore, confscore = score_pd1(oppath+pdbf, oppath+f, pocketresidues)
+                scored_seqs[scoring_pool[seqnum]] = contactscore*100 - confscore
+
+        scored_pool = {}
+        for p in pool:
+            scored_pool[p] = scored_seqs[p]
+
+        contacts, contactscore, confscore = score_pd1(oppath+pdbf, oppath+f, pocketresidues)
+        scored_pool[scoring_pool[seqnum]] = contactscore*100 - confscore
+        sorted_scored_pool = sorted(scored_pool, key=scored_pool.get, reverse=True)
+        newpool = []
+        for sp in sorted_scored_pool[:round(len(sorted_scored_pool)/2)]:
+            newpool.append(sp)
+
+        pool = newpool
         curr_iter+=1
 
     for p in pool:
         print(str(p))
-        #scored_pool[p] = score_pd1(p)
+
+    return pool
     
-    #print(scored_pool)
 
 if __name__=="__main__":
     startingseqs = [Sequence("PSREFLILALQIALTLKA"), Sequence("QFWNLLIYLMRVYLQKHA"), Sequence("EAKNILISLLIYWAQMLD"), Sequence("FMWNILVTIARVMAQQLD"), Sequence("TAWELLIKIARYMAQQLD"), Sequence("TMKEYLILALILYELQLS"), Sequence("PKREFLILALLIALKLES"), Sequence("KLTEIMLSIGLVFMWRKS"), Sequence("PEETFHRLLWEYMERLLA"), Sequence("EEEELWIQFLRLALKIAL"), Sequence("AYEMFQILFMWYLEMKDA"), Sequence("SYERMIELMLKWLEKHLA"), Sequence("LEYLLWILAMQYLEKHLA"), Sequence("TEREVTELLKIWRELFMA"), Sequence("ECRLLHILHIRYAKAWTA"), Sequence("PSKNIFLSLAWWIAQVLT")]
     pd1seq = "WNPPTFSPALLVVTEGDNATFTCSFSNTSESFHVVWHRESPSGQTDTLAAFPEDRSQPGQDSRFRVTQLPNGRDFHMSVVRARRNDSGTYVCGVISLAPKIQIKESLRAELRVTERRAE"
-    run_genetic_alg_pd1("/home/amrita/pd1/run_geneticalg/test", pd1seq, startingseqs, poolsize = 20, num_iter = 20)
+    pocketresidues = [('31','SER'),('32','PHE'),('33','HIS'),('34','VAL'),('35','VAL'),('36','TRP'),('37','HIS'),('38','ARG'),('39','GLU'),('40','SER'),('41','PRO'),('42','SER'),('43','GLY'),('44','GLN'),('45','THR'),('46','ASP'),('47','THR'),('48','LEU'),('49','ALA'),('50','ALA'),('51','PHE'),('52','PRO'),('53','GLU'),('54','ASP'),('55','ARG'),('56','SER'),('57','GLN'),('58','PRO'),('88','GLY'),('89','THR'),('90','TYR'),('91','VAL'),('92','CYS'),('93','GLY'),('94','VAL'),('95','ILE'),('96','SER'),('102','GLN'),('103','ILE'),('104','LYS'),('105','GLU'),('106','SER'),('107','LEU'),('108','ARG')]
+    run_genetic_alg_pd1("/home/amrita/pd1/run_geneticalg/", pd1seq, startingseqs, pocketresidues, poolsize = 20, num_iter = 20)
 

@@ -12,6 +12,9 @@ class Sequence:
     def __str__(self):
         return self.seq
 
+    def __hash__(self):
+        return hash(self.seq)
+
     def mutate(self, resnums = None, mutpercent = 0.125, restypes = None, use_blosum = True):
         if resnums is None:
             resnums = [x for x in range(len(str(self)))]

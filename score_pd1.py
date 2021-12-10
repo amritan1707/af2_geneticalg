@@ -6,13 +6,14 @@ import shutil
 
 def run_af2_pd1(pool, pd1seq, directory, fpath, flagsfile, af2path):
     """runs af2 on inputted list of Sequences and writes outputs to files"""
-    os.makedirs(directory+"/inputs")
-    path = directory+"/inputs/"
+    os.makedirs(directory+"inputs")
+    path = directory+"inputs/"
     with open(path+"sequences.csv", "w") as opf:
         for p in pool:
             opf.write(","+str(pd1seq)+","+str(p)+"\n")
 
     shutil.copy(fpath+flagsfile, directory)
+    os.chdir(directory)
     return subprocess.run(["python", af2path+"run_af2.py", "@"+flagsfile])
     
 
