@@ -35,7 +35,7 @@ class Sequence:
         similarities = {}
         if use_blosum:
             matrix = []
-            with open("blosum62.txt","r") as blosumf:
+            with open("/home/amrita/pd1/run_geneticalg/blosum62.txt","r") as blosumf:
                 for lin in blosumf:
                     l = lin.strip().split(" ")
                     l = [x for x in l if x]

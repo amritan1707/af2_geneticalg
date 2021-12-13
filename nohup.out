@@ -1,0 +1,566 @@
+Traceback (most recent call last):
+  File "run_geneticalg.py", line 89, in <module>
+    run_genetic_alg_pd1("/home/amrita/pd1/run_geneticalg/", pd1seq, startingseqs, pocketresidues, poolsize = 20, num_iter = 20)
+  File "run_geneticalg.py", line 43, in run_genetic_alg_pd1
+    run_af2_pd1(scoring_pool, pd1seq, path, "/home/amrita/pd1/", "flags_froome.txt", "/home/nzrandol/alphafold/run/") 
+  File "/home/amrita/pd1/af2_geneticalg/score_pd1.py", line 9, in run_af2_pd1
+    os.makedirs(directory+"inputs")
+  File "/home/nzrandol/anaconda3/envs/af2/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+FileExistsError: [Errno 17] File exists: '/home/amrita/pd1/run_geneticalg/run1/inputs'
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_11_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_11_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_10_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_10_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_12_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_12_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_16_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_16_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_15_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_15_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_13_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_13_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_19_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_19_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_18_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_18_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_17_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_17_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_14_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_14_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+sequences_10_model_1_multimer_0_results.pbz2.out sequences_10_model_1_multimer_0_unrelaxed.pdb
+sequences_11_model_1_multimer_0_results.pbz2.out sequences_11_model_1_multimer_0_unrelaxed.pdb
+sequences_12_model_1_multimer_0_results.pbz2.out sequences_12_model_1_multimer_0_unrelaxed.pdb
+sequences_13_model_1_multimer_0_results.pbz2.out sequences_13_model_1_multimer_0_unrelaxed.pdb
+sequences_14_model_1_multimer_0_results.pbz2.out sequences_14_model_1_multimer_0_unrelaxed.pdb
+sequences_15_model_1_multimer_0_results.pbz2.out sequences_15_model_1_multimer_0_unrelaxed.pdb
+sequences_16_model_1_multimer_0_results.pbz2.out sequences_16_model_1_multimer_0_unrelaxed.pdb
+sequences_17_model_1_multimer_0_results.pbz2.out sequences_17_model_1_multimer_0_unrelaxed.pdb
+sequences_18_model_1_multimer_0_results.pbz2.out sequences_18_model_1_multimer_0_unrelaxed.pdb
+sequences_19_model_1_multimer_0_results.pbz2.out sequences_19_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7f34aa5aecd0>: -3253.334832429886, <Sequence.Sequence object at 0x7f34aa5aec90>: -6613.099364757538, <Sequence.Sequence object at 0x7f34a7487fd0>: -4689.3854212760925, <Sequence.Sequence object at 0x7f34a748e410>: -6482.481592655182, <Sequence.Sequence object at 0x7f34a748e450>: -5640.371950149536, <Sequence.Sequence object at 0x7f34a748e490>: -4121.89991235733, <Sequence.Sequence object at 0x7f34a748e4d0>: -2563.0638298988342, <Sequence.Sequence object at 0x7f34a748e6d0>: -5725.960906028748, <Sequence.Sequence object at 0x7f34a7493710>: 141.68612504005432, <Sequence.Sequence object at 0x7f34a7493750>: -7008.72456741333, <Sequence.Sequence object at 0x7f34a7493ed0>: -5540.567190170288, <Sequence.Sequence object at 0x7f34a7493f10>: -2293.608390569687, <Sequence.Sequence object at 0x7f34a7493f50>: -6060.1372265815735, <Sequence.Sequence object at 0x7f34a7493850>: -6078.584464550018, <Sequence.Sequence object at 0x7f34a7493b90>: -4616.028613567352, <Sequence.Sequence object at 0x7f34a74937d0>: -2298.943983078003, <Sequence.Sequence object at 0x7f34a7493b50>: -6313.389169216156, <Sequence.Sequence object at 0x7f34a7493bd0>: -6858.455261707306, <Sequence.Sequence object at 0x7f34a7493c10>: -5041.665428638458, <Sequence.Sequence object at 0x7f34a7493c50>: -5106.106809139252}
+Traceback (most recent call last):
+  File "run_geneticalg.py", line 89, in <module>
+    run_genetic_alg_pd1("/home/amrita/pd1/run_geneticalg/", pd1seq, startingseqs, pocketresidues, poolsize = 20, num_iter = 20)
+  File "run_geneticalg.py", line 37, in run_genetic_alg_pd1
+    pool = create_new_seqs(pool, poolsize)
+  File "run_geneticalg.py", line 14, in create_new_seqs
+    newseq = obj.mutate(resnums = [0, 1, 3, 4, 5, 7, 8, 9, 11, 12, 13, 15, 16], restypes = ["alpha" for x in range(13)])
+  File "/home/amrita/pd1/af2_geneticalg/Sequence.py", line 38, in mutate
+    with open("blosum62.txt","r") as blosumf:
+FileNotFoundError: [Errno 2] No such file or directory: 'blosum62.txt'
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_11_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_11_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_10_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_10_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_12_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_12_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_16_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_16_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_15_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_15_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_13_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_13_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_19_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_19_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_18_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_18_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_17_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_17_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_14_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_14_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run1/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run2/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run3/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run4/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+sequences_10_model_1_multimer_0_results.pbz2.out sequences_10_model_1_multimer_0_unrelaxed.pdb
+sequences_11_model_1_multimer_0_results.pbz2.out sequences_11_model_1_multimer_0_unrelaxed.pdb
+sequences_12_model_1_multimer_0_results.pbz2.out sequences_12_model_1_multimer_0_unrelaxed.pdb
+sequences_13_model_1_multimer_0_results.pbz2.out sequences_13_model_1_multimer_0_unrelaxed.pdb
+sequences_14_model_1_multimer_0_results.pbz2.out sequences_14_model_1_multimer_0_unrelaxed.pdb
+sequences_15_model_1_multimer_0_results.pbz2.out sequences_15_model_1_multimer_0_unrelaxed.pdb
+sequences_16_model_1_multimer_0_results.pbz2.out sequences_16_model_1_multimer_0_unrelaxed.pdb
+sequences_17_model_1_multimer_0_results.pbz2.out sequences_17_model_1_multimer_0_unrelaxed.pdb
+sequences_18_model_1_multimer_0_results.pbz2.out sequences_18_model_1_multimer_0_unrelaxed.pdb
+sequences_19_model_1_multimer_0_results.pbz2.out sequences_19_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa370107cd0>: -3134.552948951721, <Sequence.Sequence object at 0x7fa370107c90>: -6384.673540592194, <Sequence.Sequence object at 0x7fa370107e90>: -5223.649130344391, <Sequence.Sequence object at 0x7fa36cfe8350>: -6925.732228755951, <Sequence.Sequence object at 0x7fa36cfe8390>: -5217.603011131287, <Sequence.Sequence object at 0x7fa36cfe83d0>: -4539.957140922546, <Sequence.Sequence object at 0x7fa36cfe8410>: -3853.665154695511, <Sequence.Sequence object at 0x7fa36cfe8610>: -6126.483358383179, <Sequence.Sequence object at 0x7fa36cfec650>: -4923.113541126251, <Sequence.Sequence object at 0x7fa36cfec690>: -6377.407516956329, <Sequence.Sequence object at 0x7fa36cfece10>: -5526.259097576141, <Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cfece90>: -5115.600755691528, <Sequence.Sequence object at 0x7fa36cfec790>: -6138.342926502228, <Sequence.Sequence object at 0x7fa36cfecad0>: -5074.21891784668, <Sequence.Sequence object at 0x7fa36cfec710>: -2625.4829049110413, <Sequence.Sequence object at 0x7fa36cfeca90>: -6120.636190891266, <Sequence.Sequence object at 0x7fa36cfecb50>: -6541.843144416809, <Sequence.Sequence object at 0x7fa36cfecb90>: -3106.622739315033, <Sequence.Sequence object at 0x7fa36cfecbd0>: -7154.145864009857}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cfec710>: -2625.4829049110413, <Sequence.Sequence object at 0x7fa36cfecb90>: -3106.622739315033, <Sequence.Sequence object at 0x7fa370107cd0>: -3134.552948951721, <Sequence.Sequence object at 0x7fa36cfe8410>: -3853.665154695511, <Sequence.Sequence object at 0x7fa36cfe83d0>: -4539.957140922546, <Sequence.Sequence object at 0x7fa36cfec650>: -4923.113541126251, <Sequence.Sequence object at 0x7fa36cfecad0>: -5074.21891784668, <Sequence.Sequence object at 0x7fa36cfece90>: -5115.600755691528, <Sequence.Sequence object at 0x7fa36cfe8390>: -5217.603011131287, <Sequence.Sequence object at 0x7fa36c3b8990>: -5288.763355255127, <Sequence.Sequence object at 0x7fa36c3b8310>: -5469.955945968628, <Sequence.Sequence object at 0x7fa36c3b8f90>: -5241.302752971649, <Sequence.Sequence object at 0x7fa36c3b8950>: -6796.597374916077, <Sequence.Sequence object at 0x7fa36c3b8810>: -3943.2154874801636, <Sequence.Sequence object at 0x7fa36c3b80d0>: -6307.209858417511, <Sequence.Sequence object at 0x7fa36c3b8490>: -4156.446588516235, <Sequence.Sequence object at 0x7fa36c3b8f10>: -3989.539251089096, <Sequence.Sequence object at 0x7fa36c3b8e90>: -8188.360020637512, <Sequence.Sequence object at 0x7fa36c3b8750>: -4028.493685245514}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cfec710>: -2625.4829049110413, <Sequence.Sequence object at 0x7fa36cfecb90>: -3106.622739315033, <Sequence.Sequence object at 0x7fa370107cd0>: -3134.552948951721, <Sequence.Sequence object at 0x7fa36cfe8410>: -3853.665154695511, <Sequence.Sequence object at 0x7fa36c3b8810>: -3943.2154874801636, <Sequence.Sequence object at 0x7fa36c3b8f10>: -3989.539251089096, <Sequence.Sequence object at 0x7fa36c3b8750>: -4028.493685245514, <Sequence.Sequence object at 0x7fa36c3b8490>: -4156.446588516235, <Sequence.Sequence object at 0x7fa36cfe83d0>: -4539.957140922546, <Sequence.Sequence object at 0x7fa36cd91c10>: -5277.746509075165, <Sequence.Sequence object at 0x7fa36cd91490>: -3773.570301771164, <Sequence.Sequence object at 0x7fa36cd91550>: -5601.318597793579, <Sequence.Sequence object at 0x7fa36cd91f50>: -4758.171596288681, <Sequence.Sequence object at 0x7fa36cd91210>: -6817.278441905975, <Sequence.Sequence object at 0x7fa36cd91c90>: -3449.3591878414154, <Sequence.Sequence object at 0x7fa36cd91b50>: -5764.225433588028, <Sequence.Sequence object at 0x7fa36cd91410>: -5109.133577823639, <Sequence.Sequence object at 0x7fa36cd91750>: -5506.275880813599, <Sequence.Sequence object at 0x7fa36cd91690>: -4617.924582481384}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.outbunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run5/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run6/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run7/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+ sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cfec710>: -2625.4829049110413, <Sequence.Sequence object at 0x7fa36cfecb90>: -3106.622739315033, <Sequence.Sequence object at 0x7fa370107cd0>: -3134.552948951721, <Sequence.Sequence object at 0x7fa36cd91c90>: -3449.3591878414154, <Sequence.Sequence object at 0x7fa36cd91490>: -3773.570301771164, <Sequence.Sequence object at 0x7fa36cfe8410>: -3853.665154695511, <Sequence.Sequence object at 0x7fa36c3b8810>: -3943.2154874801636, <Sequence.Sequence object at 0x7fa36c3b8f10>: -3989.539251089096, <Sequence.Sequence object at 0x7fa36c3b8750>: -4028.493685245514, <Sequence.Sequence object at 0x7fa36ce00c10>: -4531.558058261871, <Sequence.Sequence object at 0x7fa36ce00590>: -3495.521509408951, <Sequence.Sequence object at 0x7fa36ce00810>: -6259.091687202454, <Sequence.Sequence object at 0x7fa36ce00450>: -6088.852546215057, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36ce00610>: -7388.486189365387, <Sequence.Sequence object at 0x7fa36ce001d0>: -7428.972521781921, <Sequence.Sequence object at 0x7fa36ce00210>: -7259.766969680786, <Sequence.Sequence object at 0x7fa36ce00dd0>: -3573.997467279434}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cfec710>: -2625.4829049110413, <Sequence.Sequence object at 0x7fa36cfecb90>: -3106.622739315033, <Sequence.Sequence object at 0x7fa370107cd0>: -3134.552948951721, <Sequence.Sequence object at 0x7fa36cd91c90>: -3449.3591878414154, <Sequence.Sequence object at 0x7fa36ce00590>: -3495.521509408951, <Sequence.Sequence object at 0x7fa36ce00dd0>: -3573.997467279434, <Sequence.Sequence object at 0x7fa36cd91490>: -3773.570301771164, <Sequence.Sequence object at 0x7fa36cd0d690>: -6188.896738529205, <Sequence.Sequence object at 0x7fa36c619f10>: -5077.919596195221, <Sequence.Sequence object at 0x7fa36c3bac90>: -6546.172553062439, <Sequence.Sequence object at 0x7fa36c3ba9d0>: -3296.7805250883102, <Sequence.Sequence object at 0x7fa36c3babd0>: -7057.6475076675415, <Sequence.Sequence object at 0x7fa36c3bab50>: -7665.887422084808, <Sequence.Sequence object at 0x7fa36c3ba190>: -6656.9212164878845, <Sequence.Sequence object at 0x7fa36c3baf10>: -4911.277900457382, <Sequence.Sequence object at 0x7fa36c3ba350>: -7135.6468415260315, <Sequence.Sequence object at 0x7fa36c3ba150>: -4800.827986955643}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cfec710>: -2625.4829049110413, <Sequence.Sequence object at 0x7fa36cfecb90>: -3106.622739315033, <Sequence.Sequence object at 0x7fa370107cd0>: -3134.552948951721, <Sequence.Sequence object at 0x7fa36c3ba9d0>: -3296.7805250883102, <Sequence.Sequence object at 0x7fa36cd91c90>: -3449.3591878414154, <Sequence.Sequence object at 0x7fa36ce00590>: -3495.521509408951, <Sequence.Sequence object at 0x7fa36ce00dd0>: -3573.997467279434, <Sequence.Sequence object at 0x7fa36cceefd0>: -6840.303085327148, <Sequence.Sequence object at 0x7fa36fdc7d90>: -4112.166416168213, <Sequence.Sequence object at 0x7fa36ce044d0>: -5634.031993865967, <Sequence.Sequence object at 0x7fa36ce04b90>: -5940.317133903503, <Sequence.Sequence object at 0x7fa36ce04cd0>: -5074.368020057678, <Sequence.Sequence object at 0x7fa36ce04150>: -3605.1508066654205, <Sequence.Sequence object at 0x7fa36ce04850>: -4652.94828915596, <Sequence.Sequence object at 0x7fa36ce04710>: -5200.57048034668, <Sequence.Sequence object at 0x7fa36ce046d0>: -3700.112375497818, <Sequence.Sequence object at 0x7fa36ce04350>: -5982.919477939606}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cfec710>: -2625.4829049110413, <Sequence.Sequence object at 0x7fa36cfecb90>: -3106.622739315033, <Sequence.Sequence object at 0x7fa370107cd0>: -3134.552948951721, <Sequence.Sequence object at 0x7fa36c3ba9d0>: -3296.7805250883102, <Sequence.Sequence object at 0x7fa36cd91c90>: -3449.3591878414154, <Sequence.Sequence object at 0x7fa36ce00590>: -3495.521509408951, <Sequence.Sequence object at 0x7fa36ce00dd0>: -3573.997467279434, <Sequence.Sequence object at 0x7fa36cda2fd0>: -6510.0529618263245, <Sequence.Sequence object at 0x7fa36cda2ad0>: -3739.6108827590942, <Sequence.Sequence object at 0x7fa36cda21d0>: -7073.919442176819, <Sequence.Sequence object at 0x7fa36cda2b10>: -2585.1083488464355, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36cda2a50>: -3151.9248189926147, <Sequence.Sequence object at 0x7fa36cda2090>: -3013.6329193115234, <Sequence.Sequence object at 0x7fa36cda2450>: -4521.512864112854, <Sequence.Sequence object at 0x7fa36cda2390>: -2223.083109855652, <Sequence.Sequence object at 0x7fa36cda2610>: -3989.539251089096}bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run8/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run9/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run10/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run11/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cda2390>: -2223.083109855652, <Sequence.Sequence object at 0x7fa36cda2b10>: -2585.1083488464355, <Sequence.Sequence object at 0x7fa36cfec710>: -2625.4829049110413, <Sequence.Sequence object at 0x7fa36cda2090>: -3013.6329193115234, <Sequence.Sequence object at 0x7fa36cfecb90>: -3106.622739315033, <Sequence.Sequence object at 0x7fa370107cd0>: -3134.552948951721, <Sequence.Sequence object at 0x7fa36cd8a390>: -5997.918872833252, <Sequence.Sequence object at 0x7fa36cde8f10>: -5616.216793298721, <Sequence.Sequence object at 0x7fa36cde8bd0>: -4833.172101736069, <Sequence.Sequence object at 0x7fa36cde8150>: -5689.9324588775635, <Sequence.Sequence object at 0x7fa36cde8f50>: -4211.651433944702, <Sequence.Sequence object at 0x7fa36cde8550>: -5430.92737865448, <Sequence.Sequence object at 0x7fa36cde8e90>: -3459.404900789261, <Sequence.Sequence object at 0x7fa36cde8ad0>: -5579.05335688591, <Sequence.Sequence object at 0x7fa36cde8050>: -5426.368400812149, <Sequence.Sequence object at 0x7fa36cde8d10>: -4635.629237413406}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cda2390>: -2223.083109855652, <Sequence.Sequence object at 0x7fa36cda2b10>: -2585.1083488464355, <Sequence.Sequence object at 0x7fa36cfec710>: -2625.4829049110413, <Sequence.Sequence object at 0x7fa36cda2090>: -3013.6329193115234, <Sequence.Sequence object at 0x7fa36cfecb90>: -3106.622739315033, <Sequence.Sequence object at 0x7fa370107cd0>: -3134.552948951721, <Sequence.Sequence object at 0x7fa36cd96250>: -3283.518159389496, <Sequence.Sequence object at 0x7fa36cd96150>: -3181.180858373642, <Sequence.Sequence object at 0x7fa36cd963d0>: -2397.0562958717346, <Sequence.Sequence object at 0x7fa36cd964d0>: -6325.891146183014, <Sequence.Sequence object at 0x7fa36cd96a90>: -2554.689990401268, <Sequence.Sequence object at 0x7fa36cd96090>: -7102.624876022339, <Sequence.Sequence object at 0x7fa36cd961d0>: -4956.215890407562, <Sequence.Sequence object at 0x7fa36cd96e50>: -2205.260619878769, <Sequence.Sequence object at 0x7fa36cd96290>: -3469.434886455536, <Sequence.Sequence object at 0x7fa36cd96790>: -2665.012767314911}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cd96e50>: -2205.260619878769, <Sequence.Sequence object at 0x7fa36cda2390>: -2223.083109855652, <Sequence.Sequence object at 0x7fa36cd963d0>: -2397.0562958717346, <Sequence.Sequence object at 0x7fa36cd96a90>: -2554.689990401268, <Sequence.Sequence object at 0x7fa36cda2b10>: -2585.1083488464355, <Sequence.Sequence object at 0x7fa36cfec710>: -2625.4829049110413, <Sequence.Sequence object at 0x7fa36c387310>: -4030.4731533527374, <Sequence.Sequence object at 0x7fa36c387c90>: -5568.62744140625, <Sequence.Sequence object at 0x7fa36c387bd0>: -5151.146121025085, <Sequence.Sequence object at 0x7fa36c387cd0>: -7085.520186424255, <Sequence.Sequence object at 0x7fa36c387a90>: -5388.889420032501, <Sequence.Sequence object at 0x7fa36c387a10>: -2482.0549824237823, <Sequence.Sequence object at 0x7fa36c387190>: -5261.777868747711, <Sequence.Sequence object at 0x7fa36c387810>: -2737.903144598007, <Sequence.Sequence object at 0x7fa36c387c50>: -1945.9828180074692, <Sequence.Sequence object at 0x7fa36c387d90>: -5039.957271099091}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36c387c50>: -1945.9828180074692, <Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cd96e50>: -2205.260619878769, <Sequence.Sequence object at 0x7fa36cda2390>: -2223.083109855652, <Sequence.Sequence object at 0x7fa36cd963d0>: -2397.0562958717346, <Sequence.Sequence object at 0x7fa36c387a10>: -2482.0549824237823, <Sequence.Sequence object at 0x7fa36cd96a90>: -2554.689990401268, <Sequence.Sequence object at 0x7fa36cdeecd0>: -5486.864725589752, <Sequence.Sequence object at 0x7fa36cdeef90>: -2183.040211558342, <Sequence.Sequence object at 0x7fa36cdee6d0>: -1740.5157458782196, <Sequence.Sequence object at 0x7fa36cdee990>: -7727.8865032196045, <Sequence.Sequence object at 0x7fa36cdeeb10>: -5234.489657878876, <Sequence.Sequence object at 0x7fa36cdeeb50>: -6329.036301136017, <Sequence.Sequence object at 0x7fa36cdeebd0>: -2869.96932387352, <Sequence.Sequence object at 0x7fa36cdeee10>: -3127.5094985961914, <Sequence.Sequence object at 0x7fa36cdee810>: -7039.876713275909, <Sequence.Sequence object at 0x7fa36cdee850>: -2440.758328437805}bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run12/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run13/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run14/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run15/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36cdee6d0>: -1740.5157458782196, <Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36c387c50>: -1945.9828180074692, <Sequence.Sequence object at 0x7fa36cdeef90>: -2183.040211558342, <Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cd96e50>: -2205.260619878769, <Sequence.Sequence object at 0x7fa36cda2390>: -2223.083109855652, <Sequence.Sequence object at 0x7fa36cd963d0>: -2397.0562958717346, <Sequence.Sequence object at 0x7fa36ccfb0d0>: -2749.4676933288574, <Sequence.Sequence object at 0x7fa36c3b5210>: -4096.086527109146, <Sequence.Sequence object at 0x7fa36c3b5b50>: -4366.7064418792725, <Sequence.Sequence object at 0x7fa36c3b5290>: -6559.603482246399, <Sequence.Sequence object at 0x7fa36c3b5790>: -4326.893398284912, <Sequence.Sequence object at 0x7fa36c3b5c10>: -6327.443859100342, <Sequence.Sequence object at 0x7fa36c3b5cd0>: -4294.395012617111, <Sequence.Sequence object at 0x7fa36c3b5710>: -5667.923877239227, <Sequence.Sequence object at 0x7fa36c3b58d0>: -6344.545675754547, <Sequence.Sequence object at 0x7fa36c3b5d10>: -4329.150120019913}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36cdee6d0>: -1740.5157458782196, <Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36c387c50>: -1945.9828180074692, <Sequence.Sequence object at 0x7fa36cdeef90>: -2183.040211558342, <Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cd96e50>: -2205.260619878769, <Sequence.Sequence object at 0x7fa36cda2390>: -2223.083109855652, <Sequence.Sequence object at 0x7fa36cd963d0>: -2397.0562958717346, <Sequence.Sequence object at 0x7fa36c389a90>: -2836.7665526866913, <Sequence.Sequence object at 0x7fa36c389710>: -1174.520278453827, <Sequence.Sequence object at 0x7fa36c389950>: -4255.773621082306, <Sequence.Sequence object at 0x7fa36c389f10>: -2886.670253753662, <Sequence.Sequence object at 0x7fa36c389550>: -2804.6406865119934, <Sequence.Sequence object at 0x7fa36c389e50>: -2481.6111764907837, <Sequence.Sequence object at 0x7fa36c389910>: -4356.471803188324, <Sequence.Sequence object at 0x7fa36c389890>: -2215.3691695928574, <Sequence.Sequence object at 0x7fa36c389f50>: -4459.4140729904175, <Sequence.Sequence object at 0x7fa36c3892d0>: -2159.175820350647}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36c389710>: -1174.520278453827, <Sequence.Sequence object at 0x7fa36cdee6d0>: -1740.5157458782196, <Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36c387c50>: -1945.9828180074692, <Sequence.Sequence object at 0x7fa36c3892d0>: -2159.175820350647, <Sequence.Sequence object at 0x7fa36cdeef90>: -2183.040211558342, <Sequence.Sequence object at 0x7fa36cfece50>: -2193.1618683338165, <Sequence.Sequence object at 0x7fa36cd96e50>: -2205.260619878769, <Sequence.Sequence object at 0x7fa36cdaf2d0>: -4151.585216522217, <Sequence.Sequence object at 0x7fa36cdafad0>: -3673.5830051898956, <Sequence.Sequence object at 0x7fa36cdaf890>: -2412.205911040306, <Sequence.Sequence object at 0x7fa36cdaf710>: -2073.538469314575, <Sequence.Sequence object at 0x7fa36cdafa50>: -6736.188548088074, <Sequence.Sequence object at 0x7fa36cdaf790>: -2349.7990736961365, <Sequence.Sequence object at 0x7fa36cdaf090>: -7039.876713275909, <Sequence.Sequence object at 0x7fa36cdafa10>: -1682.3130776882172, <Sequence.Sequence object at 0x7fa36cdaf8d0>: -2151.468518972397, <Sequence.Sequence object at 0x7fa36cdaf5d0>: -2948.2976334095}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36c389710>: -1174.520278453827, <Sequence.Sequence object at 0x7fa36cdafa10>: -1682.3130776882172, <Sequence.Sequence object at 0x7fa36cdee6d0>: -1740.5157458782196, <Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36c387c50>: -1945.9828180074692, <Sequence.Sequence object at 0x7fa36cdaf710>: -2073.538469314575, <Sequence.Sequence object at 0x7fa36cdaf8d0>: -2151.468518972397, <Sequence.Sequence object at 0x7fa36c3892d0>: -2159.175820350647, <Sequence.Sequence object at 0x7fa36c3bcb90>: -2709.749186038971, <Sequence.Sequence object at 0x7fa36c3bcf10>: -5177.956043958664, <Sequence.Sequence object at 0x7fa36c3bcf50>: -3574.8649542331696, <Sequence.Sequence object at 0x7fa36c3bce50>: -3421.4764959812164, <Sequence.Sequence object at 0x7fa36c3bcf90>: -3394.8598160743713, <Sequence.Sequence object at 0x7fa36c3bc590>: -6206.103549003601, <Sequence.Sequence object at 0x7fa36c3bca90>: -1945.9426629543304, <Sequence.Sequence object at 0x7fa36c3bccd0>: -6628.126140594482, <Sequence.Sequence object at 0x7fa36c3bc850>: -4335.268421888351, <Sequence.Sequence object at 0x7fa36c3bc9d0>: -2274.1126285791397}bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run16/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run17/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run18/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run19/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36c389710>: -1174.520278453827, <Sequence.Sequence object at 0x7fa36cdafa10>: -1682.3130776882172, <Sequence.Sequence object at 0x7fa36cdee6d0>: -1740.5157458782196, <Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36c3bca90>: -1945.9426629543304, <Sequence.Sequence object at 0x7fa36c387c50>: -1945.9828180074692, <Sequence.Sequence object at 0x7fa36cdaf710>: -2073.538469314575, <Sequence.Sequence object at 0x7fa36cdaf8d0>: -2151.468518972397, <Sequence.Sequence object at 0x7fa36c3dd5d0>: -4965.370084524155, <Sequence.Sequence object at 0x7fa36c3dd8d0>: -2306.719753742218, <Sequence.Sequence object at 0x7fa36c3dd450>: -4266.316014289856, <Sequence.Sequence object at 0x7fa36c3dde10>: -4770.970047950745, <Sequence.Sequence object at 0x7fa36c3ddd50>: -1379.4811706542969, <Sequence.Sequence object at 0x7fa36c3ddb10>: -4034.153226852417, <Sequence.Sequence object at 0x7fa36c3dd810>: -1814.3338963985443, <Sequence.Sequence object at 0x7fa36c3ddf90>: -2912.202577829361, <Sequence.Sequence object at 0x7fa36c3dda50>: -7360.92803812027, <Sequence.Sequence object at 0x7fa36c3dd7d0>: -6510.0529618263245}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36c389710>: -1174.520278453827, <Sequence.Sequence object at 0x7fa36c3ddd50>: -1379.4811706542969, <Sequence.Sequence object at 0x7fa36cdafa10>: -1682.3130776882172, <Sequence.Sequence object at 0x7fa36cdee6d0>: -1740.5157458782196, <Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36c3dd810>: -1814.3338963985443, <Sequence.Sequence object at 0x7fa36c3bca90>: -1945.9426629543304, <Sequence.Sequence object at 0x7fa36c387c50>: -1945.9828180074692, <Sequence.Sequence object at 0x7fa36cdf61d0>: -4473.125528097153, <Sequence.Sequence object at 0x7fa36cdf66d0>: -7884.98176908493, <Sequence.Sequence object at 0x7fa36cdf65d0>: -2588.0877978801727, <Sequence.Sequence object at 0x7fa36cdf6610>: -7184.091680049896, <Sequence.Sequence object at 0x7fa36cdf6690>: -2386.149708509445, <Sequence.Sequence object at 0x7fa36cdf6a10>: -6789.212455272675, <Sequence.Sequence object at 0x7fa36cdf6dd0>: -4747.7405598163605, <Sequence.Sequence object at 0x7fa36cdf6990>: -6736.846209049225, <Sequence.Sequence object at 0x7fa36cdf6490>: -6702.984178543091, <Sequence.Sequence object at 0x7fa36cdf6bd0>: -3450.120114326477}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36c389710>: -1174.520278453827, <Sequence.Sequence object at 0x7fa36c3ddd50>: -1379.4811706542969, <Sequence.Sequence object at 0x7fa36cdafa10>: -1682.3130776882172, <Sequence.Sequence object at 0x7fa36cdee6d0>: -1740.5157458782196, <Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36c3dd810>: -1814.3338963985443, <Sequence.Sequence object at 0x7fa36c3bca90>: -1945.9426629543304, <Sequence.Sequence object at 0x7fa36c387c50>: -1945.9828180074692, <Sequence.Sequence object at 0x7fa36c39c610>: 291.0046510696411, <Sequence.Sequence object at 0x7fa36c39c790>: -5805.649378299713, <Sequence.Sequence object at 0x7fa36c39c510>: -4561.847173213959, <Sequence.Sequence object at 0x7fa36c39ccd0>: -6177.16086101532, <Sequence.Sequence object at 0x7fa36c39cd50>: -5461.993100166321, <Sequence.Sequence object at 0x7fa36c39ced0>: -4838.656896352768, <Sequence.Sequence object at 0x7fa36c39c6d0>: -1877.549953341484, <Sequence.Sequence object at 0x7fa36c39c810>: -3700.712173461914, <Sequence.Sequence object at 0x7fa36c39cf90>: -2194.360629796982, <Sequence.Sequence object at 0x7fa36c39c650>: -639.5293163061142}
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36c39c610>: 291.0046510696411, <Sequence.Sequence object at 0x7fa36c39c650>: -639.5293163061142, <Sequence.Sequence object at 0x7fa36c389710>: -1174.520278453827, <Sequence.Sequence object at 0x7fa36c3ddd50>: -1379.4811706542969, <Sequence.Sequence object at 0x7fa36cdafa10>: -1682.3130776882172, <Sequence.Sequence object at 0x7fa36cdee6d0>: -1740.5157458782196, <Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36c3dd810>: -1814.3338963985443, <Sequence.Sequence object at 0x7fa36c3e1790>: -1745.030425310135, <Sequence.Sequence object at 0x7fa36c3e1c50>: -4670.420433521271, <Sequence.Sequence object at 0x7fa36c3e1690>: -4761.681280612946, <Sequence.Sequence object at 0x7fa36c3e1a10>: -7482.91232585907, <Sequence.Sequence object at 0x7fa36c3e1f90>: -2483.569319963455, <Sequence.Sequence object at 0x7fa36c3e1310>: -3200.4262421131134, <Sequence.Sequence object at 0x7fa36c3e12d0>: -4751.643960475922, <Sequence.Sequence object at 0x7fa36c3e17d0>: -5342.698917388916, <Sequence.Sequence object at 0x7fa36c3e1d10>: -2686.109127998352, <Sequence.Sequence object at 0x7fa36c3e1f10>: -2440.758328437805}bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_6_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_6_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_3_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_3_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_1_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_1_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_9_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_9_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_4_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_4_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_2_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_2_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_7_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_7_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_8_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_8_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_0_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_0_model_1_multimer_0_results.pbz2.out
+bunzip2: Can't guess original name for /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_5_model_1_multimer_0_results.pbz2 -- using /home/amrita/pd1/run_geneticalg/run20/outputs/sequences_5_model_1_multimer_0_results.pbz2.out
+
+done running af2
+done unzipping results files
+sequences_0_model_1_multimer_0_results.pbz2.out sequences_0_model_1_multimer_0_unrelaxed.pdb
+sequences_1_model_1_multimer_0_results.pbz2.out sequences_1_model_1_multimer_0_unrelaxed.pdb
+sequences_2_model_1_multimer_0_results.pbz2.out sequences_2_model_1_multimer_0_unrelaxed.pdb
+sequences_3_model_1_multimer_0_results.pbz2.out sequences_3_model_1_multimer_0_unrelaxed.pdb
+sequences_4_model_1_multimer_0_results.pbz2.out sequences_4_model_1_multimer_0_unrelaxed.pdb
+sequences_5_model_1_multimer_0_results.pbz2.out sequences_5_model_1_multimer_0_unrelaxed.pdb
+sequences_6_model_1_multimer_0_results.pbz2.out sequences_6_model_1_multimer_0_unrelaxed.pdb
+sequences_7_model_1_multimer_0_results.pbz2.out sequences_7_model_1_multimer_0_unrelaxed.pdb
+sequences_8_model_1_multimer_0_results.pbz2.out sequences_8_model_1_multimer_0_unrelaxed.pdb
+sequences_9_model_1_multimer_0_results.pbz2.out sequences_9_model_1_multimer_0_unrelaxed.pdb
+done scoring sequences
+{<Sequence.Sequence object at 0x7fa36c39c610>: 291.0046510696411, <Sequence.Sequence object at 0x7fa36c39c650>: -639.5293163061142, <Sequence.Sequence object at 0x7fa36c389710>: -1174.520278453827, <Sequence.Sequence object at 0x7fa36c3ddd50>: -1379.4811706542969, <Sequence.Sequence object at 0x7fa36cdafa10>: -1682.3130776882172, <Sequence.Sequence object at 0x7fa36cdee6d0>: -1740.5157458782196, <Sequence.Sequence object at 0x7fa36c3e1790>: -1745.030425310135, <Sequence.Sequence object at 0x7fa36ce00f10>: -1749.5061213970184, <Sequence.Sequence object at 0x7fa36cda2250>: -1795.1621470451355, <Sequence.Sequence object at 0x7fa36ce00950>: -1798.1350432634354, <Sequence.Sequence object at 0x7fa36cdb8490>: -3468.1112649440765, <Sequence.Sequence object at 0x7fa36cdb8050>: -6245.132396221161, <Sequence.Sequence object at 0x7fa36cdb8a10>: -3515.4655780792236, <Sequence.Sequence object at 0x7fa36cdb8f50>: -5056.305921077728, <Sequence.Sequence object at 0x7fa36cdb80d0>: -5086.540207624435, <Sequence.Sequence object at 0x7fa36cdb8e50>: -2702.8061950206757, <Sequence.Sequence object at 0x7fa36cdb8e90>: -3785.867706298828, <Sequence.Sequence object at 0x7fa36cdb8fd0>: -7867.482384681702, <Sequence.Sequence object at 0x7fa36cdb8450>: -4201.381758928299, <Sequence.Sequence object at 0x7fa36cdb8810>: -5409.8342871665955}
+KSERMMEMMYKWLEKHLA
+SYERMIEMMLKWLEKYMA
+PSERMIEMMLKWLEKHSA
+SYERMIEMMLKWLEKHMA
+PSERMMEMMLKWLEKHLA
+AYERMIEMMLKWLEKHLA
+PSERMIEMMLKFLEKFSA
+SYERMIEMMLKWLEKHLA
+SHERMIEEHHKWLQKHLA
+PSREFLILAAQVALTLKA

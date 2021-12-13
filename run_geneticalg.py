@@ -30,37 +30,44 @@ def run_genetic_alg_pd1(pa, pd1seq, startingseqs, pocketresidues, poolsize = 50,
     curr_iter = 1
     while curr_iter <= num_iter:
         path = pa + "run"+str(curr_iter)+"/"
-        
-        pool = create_new_seqs(startingseqs, poolsize)
+        if curr_iter == 1:
+            pool = create_new_seqs(startingseqs, poolsize)
+
+        else:
+            pool = create_new_seqs(pool, poolsize)
 
 
         scoring_pool = [p for p in pool if p not in scored_seqs.keys()]
         #uncomment when running
         #def run_af2_pd1(pool, pd1seq, directory, fpath, flagsfile, af2path):
         run_af2_pd1(scoring_pool, pd1seq, path, "/home/amrita/pd1/", "flags_froome.txt", "/home/nzrandol/alphafold/run/") 
+        print("done running af2")
 
         oppath = path+"outputs/"
 
         files = os.listdir(oppath)
         for f in files:
             if f.endswith("pbz2"):
-                subprocess.run(["bunzip2", f])
+                subprocess.run(["bunzip2", oppath+f])
         files = natsort.natsorted(os.listdir(oppath))
+        print("done unzipping results files")
 
         for f in files:
             if f.endswith("out"):
-                seqnum = f.split("_")[1]
+                seqnum = int(f.split("_")[1])
                 pdbf = f.partition('results')[0]+"unrelaxed.pdb"
                 print(f, pdbf)
                 contacts, contactscore, confscore = score_pd1(oppath+pdbf, oppath+f, pocketresidues)
                 scored_seqs[scoring_pool[seqnum]] = contactscore*100 - confscore
 
+        print("done scoring sequences")
+
         scored_pool = {}
         for p in pool:
             scored_pool[p] = scored_seqs[p]
+        
+        print(scored_pool)
 
-        contacts, contactscore, confscore = score_pd1(oppath+pdbf, oppath+f, pocketresidues)
-        scored_pool[scoring_pool[seqnum]] = contactscore*100 - confscore
         sorted_scored_pool = sorted(scored_pool, key=scored_pool.get, reverse=True)
         newpool = []
         for sp in sorted_scored_pool[:round(len(sorted_scored_pool)/2)]:
