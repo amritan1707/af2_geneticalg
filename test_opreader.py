@@ -16,25 +16,36 @@ files = os.listdir(oppath)
 scored_seqs = {}
 scoring_pool = [Sequence("PSREFLILALQIALTLKA"), Sequence("QFWNLLIYLMRVYLQKHA"), Sequence("EAKNILISLLIYWAQMLD"), Sequence("FMWNILVTIARVMAQQLD"), Sequence("TAWELLIKIARYMAQQLD"), Sequence("PKREFLILALLIALKLES"), Sequence("KLTEIMLSIGLVFMWRKS"), Sequence("PEETFHRLLWEYMERLLA"), Sequence("EEEELWIQFLRLALKIAL"), Sequence("AYEMFQILFMWYLEMKDA"), Sequence("SYERMIELMLKWLEKHLA"), Sequence("LEYLLWILAMQYLEKHLA"), Sequence("TEREVTELLKIWRELFMA"), Sequence("ECRLLHILHIRYAKAWTA"), Sequence("PSKNIFLSLAWWIAQVLT")]
 pool = [Sequence("PSREFLILALQIALTLKA"), Sequence("QFWNLLIYLMRVYLQKHA"), Sequence("EAKNILISLLIYWAQMLD"), Sequence("FMWNILVTIARVMAQQLD"), Sequence("TAWELLIKIARYMAQQLD"), Sequence("PKREFLILALLIALKLES"), Sequence("KLTEIMLSIGLVFMWRKS"), Sequence("PEETFHRLLWEYMERLLA"), Sequence("EEEELWIQFLRLALKIAL"), Sequence("AYEMFQILFMWYLEMKDA"), Sequence("SYERMIELMLKWLEKHLA"), Sequence("LEYLLWILAMQYLEKHLA"), Sequence("TEREVTELLKIWRELFMA"), Sequence("ECRLLHILHIRYAKAWTA"), Sequence("PSKNIFLSLAWWIAQVLT")]
+files = os.listdir(oppath)
 for f in files:
     if f.endswith("out"):
         seqnum = int(f.split("_")[1])
         pdbf = f.partition('results')[0]+"unrelaxed.pdb"
+        print(f, pdbf)
         contacts, contactscore, confscore = score_pd1(oppath+pdbf, oppath+f, pocketresidues)
-        scored_seqs[scoring_pool[seqnum]] = contactscore*100 - confscore
-
+        scored_seqs[scoring_pool[seqnum]] = (-contactscore*100 + confscore, -contactscore*100, confscore)
 
 scored_pool = {}
 for p in pool:
     scored_pool[p] = scored_seqs[p]
 
-sorted_scored_pool = sorted(scored_pool, key=scored_pool.get, reverse=True)
-for sp in sorted_scored_pool:
-    print(str(sp), scored_pool[sp])
+print(scored_pool)
+
+sorted_scored_pool = sorted(scored_pool.items(), key=lambda x: x[1])
+print(sorted_scored_pool)
+sorted_scores = []
+for s in sorted_scored_pool:
+    print(str(s[0]))
+    print(scored_pool[s[0]])
+
+#seqs_per_iteration.append(sorted_scored_pool)
+#scores_per_iteration.append(sorted_scores)
+
 newpool = []
 for sp in sorted_scored_pool[:round(len(sorted_scored_pool)/2)]:
     newpool.append(sp)
-    
+
+
 print(newpool)
 for p in newpool:
     print(str(p))
