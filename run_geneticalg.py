@@ -11,7 +11,7 @@ def create_new_seqs(startseqs, num_seqs, crossoverpercent = 0.2):
     pool = startseqs
     while len(pool)<num_seqs*(1-crossoverpercent):
         obj = random.choice(startseqs)
-        newseq = obj.mutate(resnums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], restypes = ["alpha" for x in range(16)])
+        newseq = obj.mutate(resnums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], restypes = ["all" for x in range(16)], use_blosum = False)
         newseq = Sequence("".join(newseq))
         if newseq not in pool:
             pool.append(newseq)
@@ -102,18 +102,29 @@ def generate_random_seqs(aalist, num_aas, num_seqs):
 
     return oplist
 
+def read_starting_seqs(seqfile):
+    seqs = []
+    with open(seqfile,"r") as seqf:
+        for l in seqf:
+            seqs.append(Sequence(l.strip()))
+
+    return seqs
+
+
     
 
 if __name__=="__main__":
     #startingseqs = [Sequence("PSREFLILALQIALTLKA"), Sequence("QFWNLLIYLMRVYLQKHA"), Sequence("EAKNILISLLIYWAQMLD"), Sequence("FMWNILVTIARVMAQQLD"), Sequence("TAWELLIKIARYMAQQLD"), Sequence("TMKEYLILALILYELQLS"), Sequence("PKREFLILALLIALKLES"), Sequence("KLTEIMLSIGLVFMWRKS"), Sequence("PEETFHRLLWEYMERLLA"), Sequence("EEEELWIQFLRLALKIAL"), Sequence("AYEMFQILFMWYLEMKDA"), Sequence("SYERMIELMLKWLEKHLA"), Sequence("LEYLLWILAMQYLEKHLA"), Sequence("TEREVTELLKIWRELFMA"), Sequence("ECRLLHILHIRYAKAWTA"), Sequence("PSKNIFLSLAWWIAQVLT")]
+
     aalist = ["A", "D", "E", "F", "G", "H", "I", "K", "L", "M", "N", "Q", "R", "S", "T", "V", "W", "Y"]
     num_aas = 16
-    num_seqs = 20
-    startingseqs = generate_random_seqs(aalist, num_aas, num_seqs)
+    num_seqs = 30
+    #startingseqs = generate_random_seqs(aalist, num_aas, num_seqs)
+    startingseqs = read_starting_seqs("/home/amrita/pd1/run_geneticalg/startingseqs.txt")
     #print(startingseqs)
     pd1seq = "WNPPTFSPALLVVTEGDNATFTCSFSNTSESFHVVWHRESPSGQTDTLAAFPEDRSQPGQDSRFRVTQLPNGRDFHMSVVRARRNDSGTYVCGVISLAPKIQIKESLRAELRVTERRAE"
     pocketresidues = [('31','SER'),('32','PHE'),('33','HIS'),('34','VAL'),('35','VAL'),('36','TRP'),('37','HIS'),('38','ARG'),('39','GLU'),('40','SER'),('41','PRO'),('42','SER'),('43','GLY'),('44','GLN'),('45','THR'),('46','ASP'),('47','THR'),('48','LEU'),('49','ALA'),('50','ALA'),('51','PHE'),('52','PRO'),('53','GLU'),('54','ASP'),('55','ARG'),('56','SER'),('57','GLN'),('58','PRO'),('88','GLY'),('89','THR'),('90','TYR'),('91','VAL'),('92','CYS'),('93','GLY'),('94','VAL'),('95','ILE'),('96','SER'),('102','GLN'),('103','ILE'),('104','LYS'),('105','GLU'),('106','SER'),('107','LEU'),('108','ARG')]
-    final_seqs = run_genetic_alg_pd1("/home/amrita/pd1/run_geneticalg/", pd1seq, startingseqs, pocketresidues, poolsize = 20, num_iter = 50)
+    final_seqs = run_genetic_alg_pd1("/home/amrita/pd1/run_geneticalg/", pd1seq, startingseqs, pocketresidues, poolsize = num_seqs, num_iter = 50)
     run_af2_pd1(final_seqs, pd1seq, "/home/amrita/pd1/run_geneticalg/final_sequences/", "/home/amrita/pd1/", "flags_froome.txt", "/home/nzrandol/alphafold/run/")
     oppath = "/home/amrita/pd1/run_geneticalg/final_sequences/outputs/"
     files = os.listdir(oppath)

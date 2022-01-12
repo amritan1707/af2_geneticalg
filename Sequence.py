@@ -71,16 +71,16 @@ class Sequence:
         for mut_id in mut_ids:
             w = []
             res = []
-            if resnums_types[mut_id] is "alpha":
+            if resnums_types[mut_id] == "alpha":
                 w = alpha_weights
                 res = alpha
-            if resnums_types[mut_id] is "hydphob":
+            if resnums_types[mut_id] == "hydphob":
                 w = hydphob_weights
                 res = hydrophobic
-            if resnums_types[mut_id] is "hydphil":
+            if resnums_types[mut_id] == "hydphil":
                 w = hydphil_weights
                 res = hydrophilic
-            if resnums_types[mut_id] is "all":
+            if resnums_types[mut_id] == "all":
                 w = all_weights
                 res = allres
 
@@ -91,9 +91,9 @@ class Sequence:
                     weights.append(aw*sw)
             else:
                 weights = w
-            newseq[mut_id] = random.choices(alpha, weights)[0]
+            newseq[mut_id] = random.choices(res, weights)[0]
             while newseq[mut_id]==oldseq[mut_id]:
-                newseq[mut_id] = random.choices(alpha, weights)[0]
+                newseq[mut_id] = random.choices(res, weights)[0]
         return newseq 
     
     def crossover(self, otherSeq, ncross = 1, p=None):
