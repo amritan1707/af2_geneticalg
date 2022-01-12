@@ -4,7 +4,6 @@ from score_pd1 import score_pd1, run_af2_pd1
 import glob
 import os
 import subprocess
-import natsort
 
 def create_new_seqs(startseqs, num_seqs, crossoverpercent = 0.2):
     """takes starting sequences and creates a pool of size num_seqs by mutation and crossover"""
@@ -80,6 +79,14 @@ def run_genetic_alg_pd1(pa, pd1seq, startingseqs, pocketresidues, poolsize = 50,
         print(str(p))
 
     return pool
+
+
+def generate_random_seqs(aalist, num_aas, num_seqs):
+    oplist = []
+    for i in range(num_seqs):
+        oplist.append(Sequence("".join(random.choices(aalist, k=num_aas))))
+
+    return oplist
     
 
 if __name__=="__main__":

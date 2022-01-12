@@ -10,8 +10,11 @@ def distance(p1, p2):
     return dist
 
 
-def score_contacts(pdbfile, reslist1, reslist2):
-    chains, residues, resindices = get_coordinates_pdb(pdbfile)
+def score_contacts(pdbfile, reslist1, reslist2, fil = True):
+    if fil:
+        chains, residues, resindices = get_coordinates_pdb(pdbfile)
+    else:
+        chains, residues, resindices = get_coordinates_pdb(pdbfile, fil = False)
     score = 0
     pairs = []
     for res1 in reslist1:
@@ -28,12 +31,20 @@ def score_contacts(pdbfile, reslist1, reslist2):
 
     return pairs, score
 
-def score_confidence_pairs(resultsfile, reslist1, reslist2, resindices):
+def score_confidence_pairs(resultsfile, reslist1, reslist2, resindices, fil = True):
     """calculates confidence score of pairwise residue interactions"""
-
-    with open(resultsfile,'rb') as f:
-        p = pickle.load(f)
-        pae = p['pae_output'][0]
+    score = 0
+    if fil:
+        with open(resultsfile,'rb') as f:
+            p = pickle.load(f)
+            pae = p['pae_output'][0]
+            for res1,res2 in zip(reslist1,reslist2):
+                res1_id = resindices[res1]
+                res2_id = resindices[res2]
+                #print(score)
+                score = score + pae[res1_id][res2_id]
+    else:
+        pae = resultsfile['pae_output'][0]
         score = 0
         for res1,res2 in zip(reslist1,reslist2):
             res1_id = resindices[res1]
@@ -42,19 +53,23 @@ def score_confidence_pairs(resultsfile, reslist1, reslist2, resindices):
             score = score + pae[res1_id][res2_id]
     return score
 
-def score_confidence_lists(resultsfile, reslist1, reslist2, resindices):
+def score_confidence_lists(resultsfile, reslist1, reslist2, resindices, fil = True):
     """calculates confidence score of all interactions between two lists of residues"""
+    pae = {}
+    score = 0
+    if fil:
+        with open(resultsfile, 'rb') as f:
+            p = pickle.load(f)
+            pae = p['pae_output'][0]
+    else:
+        pae = resultsfile['pae_output'][0]
 
-    with open(resultsfile, 'rb') as f:
-        p = pickle.load(f)
-        pae = p['pae_output'][0]
-        score = 0
-        for res1 in reslist1:
-            res1_id = resindices[res1]
-            for res2 in reslist2:
-                res2_id = resindices[res2]
-                score = score + pae[res1_id][res2_id]
+    for res1 in reslist1:
+        res1_id = resindices[res1]
+        for res2 in reslist2:
+            res2_id = resindices[res2]
+            score = score + pae[res1_id][res2_id]
     return score
 
 if __name__ == "__main__":
-    score_confidence("/home/amrita/pd1/outputs/sequences_0_model_1_multimer_seed_0_results.pbz2.out",["A_VAL_35", "B_LEU_8"])
+    score_confidence_lists("/home/amrita/pd1/outputs/sequences_0_model_1_multimer_seed_0_results.pbz2.out",["A_VAL_35", "B_LEU_8"])
